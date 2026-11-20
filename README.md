@@ -220,3 +220,4 @@ Long-tailed CIFAR protocol: Cui et al., *Class-Balanced Loss Based on Effective 
 ## Licence and attribution
 
 Apache License 2.0 (see `LICENSE`), the licence of the upstream ReSA code. Files taken from [winci-ai/resa_cifar](https://github.com/winci-ai/resa_cifar) keep their copyright notice; the modifications are described in `CHANGES.md` and in the header of each modified file.
+
