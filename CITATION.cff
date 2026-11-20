@@ -3,11 +3,11 @@ message: "If you use this code, please cite it as below, and cite the ReSA paper
 title: "ReSA under class imbalance: long-tailed pretraining and evaluation on CIFAR-10/100"
 type: software
 authors:
-  - family-names: "YOUR-SURNAME"      # TODO: replace
-    given-names: "YOUR-NAME"          # TODO: replace
-repository-code: "https://github.com/YOUR-USERNAME/resa_cifar_lt"   # TODO: replace
+  - family-names: "Dlamini"      
+    given-names: "Hetisani"          
+repository-code: "https://github.com/HetisaniD/resa_cifar_lt"   
 license: Apache-2.0
-date-released: "2026-11-10"           # TODO: date of the version you cite
+date-released: "2026-11-19"           # TODO: date of the version you cite
 references:
   - type: conference-paper
     title: "Clustering Properties of Self-Supervised Learning"
