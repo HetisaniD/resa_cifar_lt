@@ -4,7 +4,6 @@ Code for the study of **ReSA self-supervised learning on long-tailed data**: ReS
 
 It is a modified copy of the official ReSA CIFAR code, [winci-ai/resa_cifar](https://github.com/winci-ai/resa_cifar) (Weng et al., *Clustering Properties of Self-Supervised Learning*, ICML 2025, [arXiv:2501.18452](https://arxiv.org/abs/2501.18452)). The ReSA method and its training procedure are unchanged; what was added is listed in [CHANGES.md](CHANGES.md).
 
-> **Before publishing:** replace the placeholders in `CITATION.cff` and in the *Citing* section below with your name and the release date.
 
 ## What the study does
 
@@ -57,7 +56,7 @@ scripts/                   optional learning-rate sweep for the linear probe
 1. **Code on Drive.** Upload this folder to Drive, for example to `MyDrive/ReSA_Research/resa_cifar_lt`, or clone it there from a Colab cell:
 
    ```
-   !git clone https://github.com/HetisaniD/ReSA_CI.git /content/drive/MyDrive/ReSA_Research/resa_cifar_lt
+   !git clone https://github.com/HetisaniD/resa_cifar_lt.git /content/drive/MyDrive/ReSA_Research/resa_cifar_lt
    ```
 2. **Datasets on Drive.** Create a folder, for example `MyDrive/Datasets`. CIFAR-10 and CIFAR-100 are downloaded into it by the notebook if they are missing. For the transfer experiments put `tiny-imagenet-200.zip` there (from <http://cs231n.stanford.edu/tiny-imagenet-200.zip>; the notebook also downloads it if missing). Do **not** unzip it on Drive: the loader copies the zip to the Colab machine's local disk, reads it once, and stores two small array files next to it.
 
@@ -237,22 +236,6 @@ Linear-probe top-1 accuracy (%) obtained earlier in this study with `--optimizer
 ## Weights & Biases
 
 Logging to Weights & Biases is off by default. To enable it pass `--use_wandb` (notebook: `USE_WANDB = True`) and provide the API key through the `WANDB_API_KEY` environment variable or Colab's *Secrets* panel. A resumed pretraining run continues the same W&B run (its id is kept in `wandb_id.txt`). Never write a key into a notebook or commit the `wandb/` folder; `.gitignore` excludes it.
-
-## Publishing on GitHub
-
-Checkpoints, datasets, results and `.npz`/`.npy`/`.zip` files are excluded by `.gitignore`, so only the code, the notebook and the documentation are uploaded.
-
-```bash
-cd resa_cifar_lt
-git init && git add . && git commit -m "ReSA under class imbalance: code for the study"
-git branch -M main
-git remote add origin https://github.com/HetisaniD/ReSA_CI.git
-git push -u origin main
-```
-
-When `git push` asks for a password, give a GitHub personal access token. **Never put the token in the remote URL** (`https://<token>@github.com/...`): it is then stored in plain text in `.git/config` and travels with every copy of the folder.
-
-Tag the version used for the dissertation (`git tag v1.0 && git push --tags`) and cite that tag or its commit hash, so readers get exactly the code behind the results.
 
 ## Citing
 
