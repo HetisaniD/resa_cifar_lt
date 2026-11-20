@@ -1,0 +1,13 @@
+# Python >= 3.9. Google Colab already provides all of these except possibly tqdm.
+# The upstream ReSA code was written for torch 2.3.0 / torchvision 0.18.0;
+# this repository was also run with the newer versions that Colab ships.
+torch>=2.3.0
+torchvision>=0.18.0
+numpy>=1.24
+scikit-learn>=1.2
+pandas>=1.5
+matplotlib>=3.7
+Pillow>=9.0
+tqdm>=4.66.3
+# optional, only for --use_wandb:
+# wandb

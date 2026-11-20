@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Experiment tracking -- may contain account details; never commit
+wandb/
+.env
+*.key
+
+# Data and results stay on Drive / local disk, not in git
+data/
+datasets/
+results/
+*.pth
+*.pth.tar
+*.pth.tar.prev
+*.npz
+*.npy
+*.zip
+*.tar.gz
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

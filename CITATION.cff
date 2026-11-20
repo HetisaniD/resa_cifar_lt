@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below, and cite the ReSA paper it builds on."
+title: "ReSA under class imbalance: long-tailed pretraining and evaluation on CIFAR-10/100"
+type: software
+authors:
+  - family-names: "YOUR-SURNAME"      # TODO: replace
+    given-names: "YOUR-NAME"          # TODO: replace
+repository-code: "https://github.com/YOUR-USERNAME/resa_cifar_lt"   # TODO: replace
+license: Apache-2.0
+date-released: "2026-11-10"           # TODO: date of the version you cite
+references:
+  - type: conference-paper
+    title: "Clustering Properties of Self-Supervised Learning"
+    authors:
+      - family-names: "Weng"
+        given-names: "Xi"
+      - name: "et al."
+    collection-title: "Proceedings of the 42nd International Conference on Machine Learning (ICML)"
+    year: 2025
+    url: "https://arxiv.org/abs/2501.18452"
