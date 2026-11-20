@@ -256,14 +256,12 @@ Tag the version used for the dissertation (`git tag v1.0 && git push --tags`) an
 
 ## Citing
 
-This repository (replace the placeholders):
-
 ```bibtex
-@misc{YOURKEY2026resalt,
-  author = {YOUR NAME},
+@misc{Hetisani2026resalt,
+  author = {Hetisani Dlamini},
   title  = {ReSA under class imbalance: long-tailed pretraining and evaluation on CIFAR-10/100},
   year   = {2026},
-  howpublished = {\url{https://github.com/HetisaniD/ReSA_CI}},
+  howpublished = {\url{https://github.com/HetisaniD/resa_cifar_lt}},
   note   = {Version v1.0}
 }
 ```
